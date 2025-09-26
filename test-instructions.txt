@@ -1,0 +1,19 @@
+如何测试网站：
+
+方法1：如果您的系统已安装Python
+--------------------------------
+1. 打开命令提示符(cmd)或PowerShell
+2. 导航到当前文件夹：cd d:\Projects\HTML\MTRPackages
+3. 运行命令：python -m http.server 8000
+4. 在浏览器中访问：http://localhost:8000
+
+方法2：直接在浏览器中打开文件
+-----------------------------
+1. 找到index.html文件
+2. 右键点击文件
+3. 选择"打开方式"，然后选择您的浏览器
+
+修复说明：
+- 已修复JavaScript错误："Uncaught TypeError: Cannot read properties of undefined (reading 'forEach')"
+- 问题原因：代码中访问resourcePackages变量的方式不一致（有时带window，有时不带）
+- 解决方案：统一使用resourcePackages变量名（不带window前缀）

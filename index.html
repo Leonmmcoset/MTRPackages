@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTR资源包平台</title>
+    <!-- 引入Primer CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/@primer/css@22.0.2/dist/primer.css">
+    <style>
+        /* 自定义样式 */
+        body {
+            background-color: #f6f8fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #e1e4e8;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #586069;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>MTR资源包平台</h1>
+        <p>整合MTR相关资源包，方便用户查找和下载</p>
+    </div>
+    
+    <div class="container">
+        <div class="mb-6">
+            <div class="d-flex items-center">
+                <div class="avatar mr-3">
+                    <img src="https://avatars.githubusercontent.com/u/10149356" alt="MTR Logo" class="rounded">
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold">资源包列表</h2>
+                    <p class="text-gray-500 text-sm">浏览和下载MTR相关资源包</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 资源包列表容器 -->
+        <div id="resource-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- 资源包列表将通过JavaScript动态生成 -->
+        </div>
+    </div>
+    
+    <!-- 引入资源包数据和生成脚本 -->
+    <script src="list.js"></script>
+    <script src="generate.js"></script>
+</body>
+</html>
