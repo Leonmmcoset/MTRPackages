@@ -1,9 +1,9 @@
 // MTR资源包列表数据
 const resourcePackages = [
     {
-        name: "MTR核心资源包",
-        isPaid: false,
-        license: "MIT License",
-        downloadUrl: "https://example.com/download/mtr-core"
-    },
+        name: "上海地铁追加包",
+        isPaid: true,
+        license: "未知",
+        downloadUrl: "https://afdian.com/a/DF11Z-003A"
+    }
 ];
